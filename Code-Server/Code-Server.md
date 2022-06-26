@@ -1,12 +1,20 @@
 # Run Code-Server on IPv6 VPS Hax.co.id
 
-## Set WARP on IPv6 VPS
+You can choose auto install or manual install
+
+## 1. Auto-Instal (Code-Server Standalone ver.)
+
+	$ wget -qO- https://raw.githubusercontent.com/iyarivky/iyain/main/Code-Server/cs-cf.sh | bash
+
+## 2. Manual Install
+
+### Set WARP on IPv6 VPS
 
 	$ wget -N https://raw.githubusercontents.com/fscarmen/warp/main/menu.sh && bash menu.sh
 
 for more futher step, you can access https://wiki.hax.co.id/ipv6-servers/how-to-install-warp-on-ipv6-vps-for-enable-ipv4-access/
 
-## Install Code-Server
+### Install Code-Server
 
 	$ curl -fsSL https://code-server.dev/install.sh | sh
 
@@ -23,7 +31,7 @@ Your password is in ```~/.config/code-server/config.yaml```
 
 	$ cat ~/.config/code-server/config.yaml
 
-## Deploy Code-Server to Cloudflare Tunnel
+### Deploy Code-Server to Cloudflare Tunnel
 
 	$ wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && dpkg -i cloudflared-linux-amd64.deb
 
