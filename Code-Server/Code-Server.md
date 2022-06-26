@@ -17,8 +17,6 @@ for more futher step, you can access https://wiki.hax.co.id/ipv6-servers/how-to-
 ### Install Code-Server
 
 	$ curl -fsSL https://code-server.dev/install.sh | sh
-ㅤ
-
 	$ code-server
 
 if you want run as service
